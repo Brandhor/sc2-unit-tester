@@ -50,6 +50,11 @@
         <InfoArray index="Build12" Unit="VespeneGeyser">
             <Button DefaultButtonFace="BuildVespeneGeyser"/>
         </InfoArray>
+        <InfoArray index="Build13" Unit="LurkerDenMP">
+            <Charge Link="Abil/ZergBuild"/>
+            <Cooldown Link="Abil/ZergBuild"/>
+            <Button DefaultButtonFace="MutateintoLurkerDen"/>
+        </InfoArray>
         <BuildMorphAbil value="CustomBuild"/>
         <Alignment value="Positive"/>
     </CAbilBuild>

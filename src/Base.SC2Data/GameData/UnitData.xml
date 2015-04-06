@@ -85,6 +85,7 @@
             <LayoutButtons Face="Hive" Type="AbilCmd" AbilCmd="CustomBuild,Build5" Row="0" Column="4"/>
             <LayoutButtons Face="GreaterSpire" Type="AbilCmd" AbilCmd="CustomBuild,Build6" Row="1" Column="3"/>
             <LayoutButtons Face="SummonNydusWorm" Type="AbilCmd" AbilCmd="CustomBuild,Build7" Row="1" Column="4"/>
+            <LayoutButtons Face="MutateintoLurkerDen" Type="AbilCmd" AbilCmd="CustomBuild,Build13" Row="0" Column="2"/>
         </CardLayouts>
         <Radius value="0.375"/>
         <SeparationRadius value="0.375"/>
