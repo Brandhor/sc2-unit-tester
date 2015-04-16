@@ -1332,7 +1332,6 @@ void gf_DatabaseResearch () {
     gf_GetResearchDataManual("FlyingLocusts", "Assets\\Textures\\btn-unit-zerg-locustflyer.dds", "EvolveFlyingLocusts", 0, "InfestationPitResearch", "5");
     gf_GetResearchDataManual("ChitinousPlating", "Assets\\Textures\\btn-upgrade-zerg-chitinousplating.dds", "EvolveChitinousPlating", 0, "UltraliskCavernResearch", "2");
     gf_GetResearchDataManual("HydraliskSpeedUpgrade", "Assets\\Textures\\btn-upgrade-zerg-evolvemuscularaugments.dds", "MuscularAugments", 0, "HydraliskDenResearch", "3");
-    gf_GetResearchDataManual("LurkerRange", "Assets\\Textures\\btn-ability-kerrigan-malignantcreep.dds", "ResearchLurkerRange", 0, "HydraliskDenResearch", "4");
 }
 
 void gf_GetUnitDataAuto (string lp_inputUnitLink) {
