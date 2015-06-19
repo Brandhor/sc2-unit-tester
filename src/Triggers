@@ -869,6 +869,7 @@
         <FunctionCall Type="FunctionCall" Id="85BE3A32"/>
         <FunctionCall Type="FunctionCall" Id="55062D13"/>
         <FunctionCall Type="FunctionCall" Id="DB28A054"/>
+        <FunctionCall Type="FunctionCall" Id="FA15086F"/>
         <FunctionCall Type="FunctionCall" Id="AD35B28B"/>
         <FunctionCall Type="FunctionCall" Id="0841CF5E"/>
         <FunctionCall Type="FunctionCall" Id="C30E6805"/>
@@ -1835,11 +1836,13 @@
         <FunctionCall Type="FunctionCall" Id="E6407661"/>
         <FunctionCall Type="FunctionCall" Id="1B32FA51"/>
         <FunctionCall Type="FunctionCall" Id="B3C16383"/>
+        <FunctionCall Type="FunctionCall" Id="E01B72F0"/>
         <FunctionCall Type="FunctionCall" Id="B210A75E"/>
         <FunctionCall Type="FunctionCall" Id="AFE8BE03"/>
         <FunctionCall Type="FunctionCall" Id="197C45A6"/>
         <FunctionCall Type="FunctionCall" Id="B2F1B9B7"/>
         <FunctionCall Type="FunctionCall" Id="7D9DB23C"/>
+        <FunctionCall Type="FunctionCall" Id="2793CDEE"/>
         <FunctionCall Type="FunctionCall" Id="B99FED6F"/>
         <FunctionCall Type="FunctionCall" Id="1125981C"/>
         <FunctionCall Type="FunctionCall" Id="374DEC9E"/>
@@ -4855,6 +4858,15 @@
         <Parameter Type="Param" Id="276F98DC"/>
         <Parameter Type="Param" Id="86468CB4"/>
     </Element>
+    <Element Type="FunctionCall" Id="2793CDEE">
+        <FunctionDef Type="FunctionDef" Id="28AC02A4"/>
+        <Parameter Type="Param" Id="355451C5"/>
+        <Parameter Type="Param" Id="A014BCBC"/>
+        <Parameter Type="Param" Id="E9B8566D"/>
+        <Parameter Type="Param" Id="FB1086CB"/>
+        <Parameter Type="Param" Id="F06A0A00"/>
+        <Parameter Type="Param" Id="D22F8F54"/>
+    </Element>
     <Element Type="FunctionCall" Id="27A869C9">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="C41602B8"/>
         <Parameter Type="Param" Id="3D80DBC0"/>
@@ -5236,6 +5248,7 @@
         <Parameter Type="Param" Id="AD19A4F9"/>
     </Element>
     <Element Type="FunctionCall" Id="2BA1C577">
+        <Disabled/>
         <FunctionDef Type="FunctionDef" Id="28AC02A4"/>
         <Parameter Type="Param" Id="16BB5F1B"/>
         <Parameter Type="Param" Id="DBEAB96A"/>
@@ -8327,6 +8340,7 @@
         <FunctionCall Type="FunctionCall" Id="59CFFBCB"/>
     </Element>
     <Element Type="FunctionCall" Id="5B3F99BE">
+        <Disabled/>
         <FunctionDef Type="FunctionDef" Id="28AC02A4"/>
         <Parameter Type="Param" Id="329119E9"/>
         <Parameter Type="Param" Id="3C0AED7B"/>
@@ -12908,6 +12922,7 @@
         <FunctionCall Type="FunctionCall" Id="E132A8A1"/>
     </Element>
     <Element Type="FunctionCall" Id="A05A4A69">
+        <Disabled/>
         <FunctionDef Type="FunctionDef" Id="28AC02A4"/>
         <Parameter Type="Param" Id="D9828D2A"/>
         <Parameter Type="Param" Id="E6B7D8E0"/>
@@ -17351,6 +17366,15 @@
         <FunctionCall Type="FunctionCall" Id="0A1DF6C4"/>
         <FunctionCall Type="FunctionCall" Id="CE84C88F"/>
     </Element>
+    <Element Type="FunctionCall" Id="E01B72F0">
+        <FunctionDef Type="FunctionDef" Id="28AC02A4"/>
+        <Parameter Type="Param" Id="D12E83C0"/>
+        <Parameter Type="Param" Id="B50D9D57"/>
+        <Parameter Type="Param" Id="4376C592"/>
+        <Parameter Type="Param" Id="F1C72D97"/>
+        <Parameter Type="Param" Id="D7B3719A"/>
+        <Parameter Type="Param" Id="C2F2D4C0"/>
+    </Element>
     <Element Type="FunctionCall" Id="E027115D">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="F463A414"/>
     </Element>
@@ -19098,6 +19122,10 @@
     </Element>
     <Element Type="FunctionCall" Id="FA138E85">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="4AB42F83"/>
+    </Element>
+    <Element Type="FunctionCall" Id="FA15086F">
+        <FunctionDef Type="FunctionDef" Id="B6FAB3D1"/>
+        <Parameter Type="Param" Id="62F692DD"/>
     </Element>
     <Element Type="FunctionCall" Id="FA28E53C">
         <FunctionDef Type="FunctionDef" Library="Ntve" Id="20E3B9BE"/>
@@ -22234,7 +22262,7 @@
     </Element>
     <Element Type="Param" Id="177A9857">
         <ParameterDef Type="ParamDef" Id="B895E5E0"/>
-        <Value>2</Value>
+        <Value>3</Value>
         <ValueType Type="string"/>
     </Element>
     <Element Type="Param" Id="1788A0D9">
@@ -24429,7 +24457,7 @@
     </Element>
     <Element Type="Param" Id="295FC715">
         <ParameterDef Type="ParamDef" Id="044E2D9C"/>
-        <Value>Assets\Textures\btn-techupgrade-terran-consumption.dds</Value>
+        <Value>Assets\Textures\btn-upgrade-protoss-adeptshieldupgrade.dds</Value>
         <ValueType Type="filepath"/>
         <ValueTypeInfo Value="5"/>
     </Element>
@@ -25769,6 +25797,12 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="FF308E41"/>
         <Variable Type="Variable" Id="E1975B08"/>
         <Array Type="Param" Id="F72228EC"/>
+    </Element>
+    <Element Type="Param" Id="355451C5">
+        <ParameterDef Type="ParamDef" Id="B2BC0A10"/>
+        <Value>LiberatorMorph</Value>
+        <ValueType Type="gamelink"/>
+        <ValueGameType Type="Upgrade"/>
     </Element>
     <Element Type="Param" Id="35554BE7">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="4DF6106C"/>
@@ -27508,6 +27542,11 @@
     <Element Type="Param" Id="43757A27">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="4DF6106C"/>
         <FunctionCall Type="FunctionCall" Id="04B29653"/>
+    </Element>
+    <Element Type="Param" Id="4376C592">
+        <ParameterDef Type="ParamDef" Id="74A4AE48"/>
+        <Value>0</Value>
+        <ValueType Type="int"/>
     </Element>
     <Element Type="Param" Id="437DC719">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
@@ -30596,7 +30635,7 @@
     </Element>
     <Element Type="Param" Id="5EC969BD">
         <ParameterDef Type="ParamDef" Id="B2BC0A10"/>
-        <Value>AdeptKillBounce</Value>
+        <Value>AdeptShieldUpgrade</Value>
         <ValueType Type="gamelink"/>
         <ValueGameType Type="Upgrade"/>
     </Element>
@@ -31043,6 +31082,12 @@
     <Element Type="Param" Id="62EB55D1">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="D0B26923"/>
         <Variable Type="Variable" Id="7EE40765"/>
+    </Element>
+    <Element Type="Param" Id="62F692DD">
+        <ParameterDef Type="ParamDef" Id="1A2A3824"/>
+        <Value>Liberator</Value>
+        <ValueType Type="gamelink"/>
+        <ValueGameType Type="Unit"/>
     </Element>
     <Element Type="Param" Id="62F7733C">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="B6DEBC8D"/>
@@ -31761,7 +31806,7 @@
     </Element>
     <Element Type="Param" Id="68E6BF3D">
         <ParameterDef Type="ParamDef" Id="53C25E0E"/>
-        <Value>ResearchAdeptKillBounce</Value>
+        <Value>ResearchAdeptShieldUpgrade</Value>
         <ValueType Type="string"/>
     </Element>
     <Element Type="Param" Id="68F236BB">
@@ -38147,6 +38192,11 @@
         <Value>0</Value>
         <ValueType Type="string"/>
     </Element>
+    <Element Type="Param" Id="A014BCBC">
+        <ParameterDef Type="ParamDef" Id="53C25E0E"/>
+        <Value>ResearchLiberatorAGMode</Value>
+        <ValueType Type="string"/>
+    </Element>
     <Element Type="Param" Id="A017DC8C">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="7A93D947"/>
         <Variable Type="Variable" Id="1D16932B"/>
@@ -40681,6 +40731,11 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000220"/>
         <FunctionCall Type="FunctionCall" Id="64B2E5F7"/>
     </Element>
+    <Element Type="Param" Id="B50D9D57">
+        <ParameterDef Type="ParamDef" Id="53C25E0E"/>
+        <Value>CycloneResearchLockOnAir</Value>
+        <ValueType Type="string"/>
+    </Element>
     <Element Type="Param" Id="B5199048">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="BA2D0420"/>
         <Parameter Type="ParamDef" Id="88EC4C22"/>
@@ -42277,6 +42332,12 @@
         <ParameterDef Type="ParamDef" Id="B7DB46A0"/>
         <Value>9</Value>
         <ValueType Type="int"/>
+    </Element>
+    <Element Type="Param" Id="C2F2D4C0">
+        <ParameterDef Type="ParamDef" Id="044E2D9C"/>
+        <Value>Assets\Textures\btn-ability-terran-surfacetoairtargeting.dds</Value>
+        <ValueType Type="filepath"/>
+        <ValueTypeInfo Value="5"/>
     </Element>
     <Element Type="Param" Id="C2F92081">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="1A8752D4"/>
@@ -44055,6 +44116,12 @@
             ""
         </ScriptCode>
     </Element>
+    <Element Type="Param" Id="D12E83C0">
+        <ParameterDef Type="ParamDef" Id="B2BC0A10"/>
+        <Value>CycloneAirUpgrade</Value>
+        <ValueType Type="gamelink"/>
+        <ValueGameType Type="Upgrade"/>
+    </Element>
     <Element Type="Param" Id="D137503F">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="51567265"/>
         <Preset Type="PresetValue" Library="Ntve" Id="1E7A4625"/>
@@ -44167,6 +44234,12 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="C25E6187"/>
         <Value>1</Value>
         <ValueType Type="int"/>
+    </Element>
+    <Element Type="Param" Id="D22F8F54">
+        <ParameterDef Type="ParamDef" Id="044E2D9C"/>
+        <Value>Assets\Textures\btn-upgrade-terran-liberator-agmode.dds</Value>
+        <ValueType Type="filepath"/>
+        <ValueTypeInfo Value="5"/>
     </Element>
     <Element Type="Param" Id="D23EE3EF">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000691"/>
@@ -44779,6 +44852,11 @@
     <Element Type="Param" Id="D7A0F2E5">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="F603F646"/>
         <Preset Type="PresetValue" Library="Ntve" Id="7ADC9421"/>
+    </Element>
+    <Element Type="Param" Id="D7B3719A">
+        <ParameterDef Type="ParamDef" Id="7C197A2B"/>
+        <Value>FactoryTechLabResearch</Value>
+        <ValueType Type="string"/>
     </Element>
     <Element Type="Param" Id="D7BE5F89">
         <ParameterDef Type="ParamDef" Id="B895E5E0"/>
@@ -46835,6 +46913,11 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="D0B26923"/>
         <Variable Type="Variable" Id="7EE40765"/>
     </Element>
+    <Element Type="Param" Id="E9B8566D">
+        <ParameterDef Type="ParamDef" Id="74A4AE48"/>
+        <Value>0</Value>
+        <ValueType Type="int"/>
+    </Element>
     <Element Type="Param" Id="E9CB1449">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="ABB380C4"/>
         <Variable Type="Variable" Id="E4DF2D3F"/>
@@ -47602,6 +47685,11 @@
         <Value>25</Value>
         <ValueType Type="int"/>
     </Element>
+    <Element Type="Param" Id="F06A0A00">
+        <ParameterDef Type="ParamDef" Id="7C197A2B"/>
+        <Value>StarportTechLabResearch</Value>
+        <ValueType Type="string"/>
+    </Element>
     <Element Type="Param" Id="F07177E5">
         <ParameterDef Type="ParamDef" Id="B2BC0A10"/>
         <Value>TerranShipWeaponsLevel2</Value>
@@ -47745,6 +47833,11 @@
     <Element Type="Param" Id="F1C22881">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000692"/>
         <Preset Type="PresetValue" Library="Ntve" Id="2999701E"/>
+    </Element>
+    <Element Type="Param" Id="F1C72D97">
+        <ParameterDef Type="ParamDef" Id="B895E5E0"/>
+        <Value>7</Value>
+        <ValueType Type="string"/>
     </Element>
     <Element Type="Param" Id="F1CF678A">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="CAF028C1"/>
@@ -48953,6 +49046,11 @@
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000695"/>
         <Value>-;Missile,Dead,Hidden,Invulnerable</Value>
         <ValueType Type="unitfilter"/>
+    </Element>
+    <Element Type="Param" Id="FB1086CB">
+        <ParameterDef Type="ParamDef" Id="B895E5E0"/>
+        <Value>10</Value>
+        <ValueType Type="string"/>
     </Element>
     <Element Type="Param" Id="FB152461">
         <ParameterDef Type="ParamDef" Library="Ntve" Id="00000410"/>
