@@ -1265,7 +1265,7 @@ void gf_DatabaseResearch () {
     gf_GetResearchDataManual("WarpGateResearch", "Assets\\Textures\\btn-building-protoss-warpgate.dds", "ResearchWarpGate", 0, "CyberneticsCoreResearch", "6");
     gf_GetResearchDataManual("Charge", "Assets\\Textures\\btn-ability-protoss-charge-color.dds", "ResearchCharge", 0, "TwilightCouncilResearch", "0");
     gf_GetResearchDataManual("BlinkTech", "Assets\\Textures\\btn-ability-protoss-blink-color.dds", "ResearchStalkerTeleport", 0, "TwilightCouncilResearch", "1");
-    gf_GetResearchDataManual("AdeptShieldUpgrade", "Assets\\Textures\\btn-upgrade-protoss-adeptshieldupgrade.dds", "ResearchAdeptShieldUpgrade", 0, "TwilightCouncilResearch", "3");
+    gf_GetResearchDataManual("AdeptPiercingAttack", "Assets\\Textures\\btn-ability-protoss-phasedisruptor.dds", "AdeptResearchPiercingUpgrade", 0, "TwilightCouncilResearch", "2");
     gf_GetResearchDataManual("PsiStormTech", "Assets\\Textures\\btn-ability-protoss-psistorm-color.dds", "ResearchPsiStorm", 0, "TemplarArchivesResearch", "4");
     gf_GetResearchDataManual("ObserverGraviticBooster", "Assets\\Textures\\btn-upgrade-protoss-graviticbooster.dds", "ResearchGraviticBooster", 0, "RoboticsBayResearch", "1");
     gf_GetResearchDataManual("GraviticDrive", "Assets\\Textures\\btn-upgrade-protoss-graviticdrive.dds", "ResearchGraviticDrive", 0, "RoboticsBayResearch", "2");
@@ -1279,30 +1279,31 @@ void gf_DatabaseResearch () {
     gf_GetResearchDataManual("TerranInfantryArmorsLevel1", "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel1.dds", "TerranInfantryArmorLevel1", 1, "EngineeringBayResearch", "6");
     gf_GetResearchDataManual("TerranInfantryArmorsLevel2", "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel2.dds", "TerranInfantryArmorLevel2", 2, "EngineeringBayResearch", "7");
     gf_GetResearchDataManual("TerranInfantryArmorsLevel3", "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel3.dds", "TerranInfantryArmorLevel3", 3, "EngineeringBayResearch", "8");
-    gf_GetResearchDataManual("TerranVehicleAndShipWeaponsLevel1", "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds", "TerranVehicleAndShipWeaponsLevel1", 1, "ArmoryResearch", "5");
-    gf_GetResearchDataManual("TerranVehicleAndShipWeaponsLevel2", "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds", "TerranVehicleAndShipWeaponsLevel2", 2, "ArmoryResearch", "6");
-    gf_GetResearchDataManual("TerranVehicleAndShipWeaponsLevel3", "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds", "TerranVehicleAndShipWeaponsLevel3", 3, "ArmoryResearch", "7");
+    gf_GetResearchDataManual("TerranVehicleWeaponsLevel1", "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds", "TerranVehicleWeaponsLevel1", 1, "ArmoryResearch", "5");
+    gf_GetResearchDataManual("TerranVehicleWeaponsLevel2", "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds", "TerranVehicleWeaponsLevel2", 2, "ArmoryResearch", "6");
+    gf_GetResearchDataManual("TerranVehicleWeaponsLevel3", "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds", "TerranVehicleWeaponsLevel3", 3, "ArmoryResearch", "7");
     gf_GetResearchDataManual("TerranVehicleAndShipArmorsLevel1", "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds", "TerranVehicleAndShipPlatingLevel1", 1, "ArmoryResearchSwarm", "3");
     gf_GetResearchDataManual("TerranVehicleAndShipArmorsLevel2", "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds", "TerranVehicleAndShipPlatingLevel2", 2, "ArmoryResearchSwarm", "4");
     gf_GetResearchDataManual("TerranVehicleAndShipArmorsLevel3", "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds", "TerranVehicleAndShipPlatingLevel3", 3, "ArmoryResearchSwarm", "5");
+    gf_GetResearchDataManual("TerranShipWeaponsLevel1", "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel1.dds", "TerranShipWeaponsLevel1", 1, "ArmoryResearch", "11");
+    gf_GetResearchDataManual("TerranShipWeaponsLevel2", "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel2.dds", "TerranShipWeaponsLevel2", 2, "ArmoryResearch", "12");
+    gf_GetResearchDataManual("TerranShipWeaponsLevel3", "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel3.dds", "TerranShipWeaponsLevel3", 3, "ArmoryResearch", "13");
     gf_GetResearchDataManual("ShieldWall", "Assets\\Textures\\btn-techupgrade-terran-combatshield-color.dds", "ResearchShieldWall", 0, "BarracksTechLabResearch", "1");
     gf_GetResearchDataManual("Stimpack", "Assets\\Textures\\btn-ability-terran-stimpack-color.dds", "Stimpack", 0, "BarracksTechLabResearch", "0");
     gf_GetResearchDataManual("PunisherGrenades", "Assets\\Textures\\btn-ability-terran-punishergrenade-color.dds", "ResearchPunisherGrenades", 0, "BarracksTechLabResearch", "2");
     gf_GetResearchDataManual("PersonalCloaking", "Assets\\Textures\\btn-ability-terran-cloak-color.dds", "ResearchPersonalCloaking", 0, "GhostAcademyResearch", "0");
-    gf_GetResearchDataManual("GhostMoebiusReactor", "Assets\\Textures\\btn-upgrade-terran-mobiusreactor.dds", "ResearchGhostEnergyUpgrade", 0, "GhostAcademyResearch", "1");
     gf_GetResearchDataManual("HiSecAutoTracking", "Assets\\Textures\\btn-upgrade-terran-hisecautotracking.dds", "ResearchHiSecAutoTracking", 0, "EngineeringBayResearch", "0");
     gf_GetResearchDataManual("NeosteelFrame", "Assets\\Textures\\btn-upgrade-terran-neosteelframe.dds", "ResearchNeosteelFrame", 0, "EngineeringBayResearch", "5");
     gf_GetResearchDataManual("TerranBuildingArmor", "Assets\\Textures\\btn-upgrade-terran-buildingarmor.dds", "UpgradeBuildingArmorLevel1", 0, "EngineeringBayResearch", "1");
     gf_GetResearchDataManual("HighCapacityBarrels", "Assets\\Textures\\btn-upgrade-terran-infernalpreigniter.dds", "ResearchHighCapacityBarrels", 0, "FactoryTechLabResearch", "1");
     gf_GetResearchDataManual("DrillClaws", "Assets\\Textures\\btn-upgrade-terran-researchdrillingclaws.dds", "ResearchDrillClaws", 0, "FactoryTechLabResearch", "4");
-    gf_GetResearchDataManual("CycloneLockOnRangeUpgrade", "Assets\\Textures\\btn-upgrade-terran-durablematerials.dds", "ResearchLockOnRangeUpgrade", 0, "FactoryTechLabResearch", "5");
-    gf_GetResearchDataManual("CycloneAirUpgrade", "Assets\\Textures\\btn-ability-terran-surfacetoairtargeting.dds", "CycloneResearchLockOnAir", 0, "FactoryTechLabResearch", "7");
-    gf_GetResearchDataManual("MedivacCaduceusReactor", "Assets\\Textures\\btn-upgrade-terran-caduceusreactor.dds", "ResearchMedivacEnergyUpgrade", 0, "StarportTechLabResearch", "2");
-    gf_GetResearchDataManual("DurableMaterials", "Assets\\Textures\\btn-upgrade-terran-durablematerials.dds", "ResearchDurableMaterials", 0, "StarportTechLabResearch", "7");
+    gf_GetResearchDataManual("CycloneAirUpgrade", "Assets\\Textures\\btn-upgrade-terran-magfieldaccelerator.dds", "CycloneResearchLockOnDamageUpgrade", 0, "FactoryTechLabResearch", "7");
+    gf_GetResearchDataManual("MedivacIncreaseSpeedBoost", "Assets\\Textures\\btn-upgrade-terran-jotunboosters.dds", "ResearchHighCapacityFuelTanks", 0, "StarportTechLabResearch", "2");
+    gf_GetResearchDataManual("RavenDamageUpgrade", "Assets\\Textures\\btn-techupgrade-terran-ripwavemissiles.dds", "ResearchExplosiveShrapnelShells", 0, "StarportTechLabResearch", "7");
     gf_GetResearchDataManual("RavenCorvidReactor", "Assets\\Textures\\btn-upgrade-terran-corvidreactor.dds", "ResearchRavenEnergyUpgrade", 0, "StarportTechLabResearch", "3");
     gf_GetResearchDataManual("BansheeCloak", "Assets\\Textures\\btn-ability-terran-cloak-color.dds", "ResearchBansheeCloak", 0, "StarportTechLabResearch", "0");
     gf_GetResearchDataManual("BansheeSpeed", "Assets\\Textures\\btn-upgrade-terran-reapernitropacks.dds", "BansheeSpeed", 0, "StarportTechLabResearch", "9");
-    gf_GetResearchDataManual("LiberatorMorph", "Assets\\Textures\\btn-upgrade-terran-liberator-agmode.dds", "ResearchLiberatorAGMode", 0, "StarportTechLabResearch", "10");
+    gf_GetResearchDataManual("LiberatorAGRangeUpgrade", "Assets\\Textures\\btn-ability-terran-haleoflead.dds", "ResearchBallisticRange", 0, "StarportTechLabResearch", "10");
     gf_GetResearchDataManual("BattlecruiserEnableSpecializations", "Assets\\Textures\\btn-ability-terran-yamatogun-color.dds", "ResearchBattlecruiserSpecializations", 0, "FusionCoreResearch", "0");
     gf_GetResearchDataManual("BattlecruiserBehemothReactor", "Assets\\Textures\\btn-upgrade-terran-behemothreactor.dds", "ResearchBattlecruiserEnergyUpgrade", 0, "FusionCoreResearch", "1");
     gv_iUnit += 1;
@@ -1325,6 +1326,7 @@ void gf_DatabaseResearch () {
     gf_GetResearchDataManual("zerglingmovementspeed", "Assets\\Textures\\btn-upgrade-zerg-metabolicboost.dds", "zerglingmovementspeed", 0, "SpawningPoolResearch", "0");
     gf_GetResearchDataManual("zerglingattackspeed", "Assets\\Textures\\btn-upgrade-zerg-adrenalglands.dds", "zerglingattackspeed", 0, "SpawningPoolResearch", "1");
     gf_GetResearchDataManual("GlialReconstitution", "Assets\\Textures\\btn-upgrade-zerg-glialreconstitution.dds", "EvolveGlialRegeneration", 0, "RoachWarrenResearch", "1");
+    gf_GetResearchDataManual("TunnelingClaws", "Assets\\Textures\\btn-upgrade-zerg-tunnelingclaws.dds", "EvolveTunnelingClaws", 0, "RoachWarrenResearch", "2");
     gf_GetResearchDataManual("CentrificalHooks", "Assets\\Textures\\btn-upgrade-zerg-centrifugalhooks.dds", "EvolveCentrificalHooks", 0, "BanelingNestResearch", "0");
     gf_GetResearchDataManual("hydraliskspeed", "Assets\\Textures\\btn-upgrade-zerg-groovedspines.dds", "hydraliskspeed", 0, "HydraliskDenResearch", "2");
     gf_GetResearchDataManual("overlordspeed", "Assets\\Textures\\btn-upgrade-zerg-pneumatizedcarapace.dds", "overlordspeed", 0, "LairResearch", "1");
@@ -1779,10 +1781,10 @@ void gf_Createbuttonsforunits () {
         auto3127E76B_ai = 1;
         lv_iacross = 1;
         for ( ; ( (auto3127E76B_ai >= 0 && lv_iacross <= auto3127E76B_ae) || (auto3127E76B_ai <= 0 && lv_iacross >= auto3127E76B_ae) ) ; lv_iacross += auto3127E76B_ai ) {
-            libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonWidth, gv_buttonWidth, c_anchorTopLeft, lv_x, lv_y, gv_buttonUnitTooltip[gv_iUnit], StringExternal("Param/Value/5DB31F6B"), "");
+            libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonWidth, gv_buttonWidth, c_anchorTopLeft, lv_x, lv_y, gv_buttonUnitTooltip[gv_iUnit], StringToText(""), "");
             gv_buttonUnit[gv_iUnit][gv_iPlayer] = DialogControlLastCreated();
             gf_Colorbuttonsredblue(DialogControlLastCreated(), gv_iPlayer);
-            libNtve_gf_CreateDialogItemImage(DialogLastCreated(), gv_buttonImageWidth, gv_buttonImageHeight, c_anchorTopLeft, (lv_x + 2), (lv_y + 2), StringExternal("Param/Value/BC7B559F"), gv_buttonUnitFile[gv_iUnit], c_triggerImageTypeNormal, true, Color(100,100,100), c_triggerBlendModeNormal);
+            libNtve_gf_CreateDialogItemImage(DialogLastCreated(), gv_buttonImageWidth, gv_buttonImageHeight, c_anchorTopLeft, (lv_x + 2), (lv_y + 2), StringToText(""), gv_buttonUnitFile[gv_iUnit], c_triggerImageTypeNormal, true, Color(100,100,100), c_triggerBlendModeNormal);
             gv_iUnit += 1;
             if ((gv_unitLink[gv_iUnit] == null)) {
                 gv_iUnit += 1;
@@ -1822,18 +1824,18 @@ void gf_Createbuttonsforresearch () {
         auto8E97BB58_ai = 1;
         lv_iacross = 1;
         for ( ; ( (auto8E97BB58_ai >= 0 && lv_iacross <= auto8E97BB58_ae) || (auto8E97BB58_ai <= 0 && lv_iacross >= auto8E97BB58_ae) ) ; lv_iacross += auto8E97BB58_ai ) {
-            libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonWidth, gv_buttonWidth, c_anchorTopLeft, lv_x, lv_y, gv_buttonUpgradeTooltip[gv_iUnit], StringExternal("Param/Value/8DFFB955"), "");
+            libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonWidth, gv_buttonWidth, c_anchorTopLeft, lv_x, lv_y, gv_buttonUpgradeTooltip[gv_iUnit], StringToText(""), "");
             gv_buttonUpgrade[gv_iUnit][gv_iPlayer] = DialogControlLastCreated();
             gf_Colorbuttonsredblue(DialogControlLastCreated(), gv_iPlayer);
-            libNtve_gf_CreateDialogItemImage(DialogLastCreated(), gv_buttonImageWidth, gv_buttonImageHeight, c_anchorTopLeft, (lv_x + 2), (lv_y + 2), StringExternal("Param/Value/1180C2B5"), gv_buttonUpgradeFile[gv_iUnit], c_triggerImageTypeNormal, true, Color(100,100,100), c_triggerBlendModeNormal);
+            libNtve_gf_CreateDialogItemImage(DialogLastCreated(), gv_buttonImageWidth, gv_buttonImageHeight, c_anchorTopLeft, (lv_x + 2), (lv_y + 2), StringToText(""), gv_buttonUpgradeFile[gv_iUnit], c_triggerImageTypeNormal, true, Color(100,100,100), c_triggerBlendModeNormal);
             gv_buttonUpgradeImage[gv_iUnit][gv_iPlayer] = DialogControlLastCreated();
             gv_iUnit += 1;
             while ((gv_upgradeLevel[gv_iUnit] > 1)) {
-                libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonWidth, gv_buttonWidth, c_anchorTopLeft, lv_x, lv_y, gv_buttonUpgradeTooltip[gv_iUnit], StringExternal("Param/Value/8D21F3A0"), "");
+                libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonWidth, gv_buttonWidth, c_anchorTopLeft, lv_x, lv_y, gv_buttonUpgradeTooltip[gv_iUnit], StringToText(""), "");
                 gv_buttonUpgrade[gv_iUnit][gv_iPlayer] = DialogControlLastCreated();
                 DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupActive(), false);
                 gf_Colorbuttonsredblue(DialogControlLastCreated(), gv_iPlayer);
-                libNtve_gf_CreateDialogItemImage(DialogLastCreated(), gv_buttonImageWidth, gv_buttonImageHeight, c_anchorTopLeft, (lv_x + 2), (lv_y + 2), StringExternal("Param/Value/4EC7C143"), gv_buttonUpgradeFile[gv_iUnit], c_triggerImageTypeNormal, true, Color(100,100,100), c_triggerBlendModeNormal);
+                libNtve_gf_CreateDialogItemImage(DialogLastCreated(), gv_buttonImageWidth, gv_buttonImageHeight, c_anchorTopLeft, (lv_x + 2), (lv_y + 2), StringToText(""), gv_buttonUpgradeFile[gv_iUnit], c_triggerImageTypeNormal, true, Color(100,100,100), c_triggerBlendModeNormal);
                 DialogControlSetVisible(DialogControlLastCreated(), PlayerGroupActive(), false);
                 gv_buttonUpgradeImage[gv_iUnit][gv_iPlayer] = DialogControlLastCreated();
                 gv_iUnit += 1;
@@ -1860,17 +1862,17 @@ void gf_Createbuttonsforraces () {
     // Implementation
     lv_x = gv_xYOffset;
     lv_y = gv_xYOffset;
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 160, 40, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/A75CD9B5"), StringExternal("Param/Value/61E9927B"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 160, 40, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/A75CD9B5"), StringToText(""), "");
     gv_buttonRace[1][gv_iPlayer] = DialogControlLastCreated();
     gf_Colorbuttonsredblue(DialogControlLastCreated(), gv_iPlayer);
     libNtve_gf_CreateDialogItemLabel(DialogLastCreated(), 160, 40, c_anchorTopLeft, 50, 39, StringExternal("Param/Value/D7F565A2"), ColorWithAlpha(0,0,0,0), false, 2.0);
     lv_x += 160;
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 160, 40, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/61203EB8"), StringExternal("Param/Value/E6C31F3E"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 160, 40, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/61203EB8"), StringToText(""), "");
     gv_buttonRace[2][gv_iPlayer] = DialogControlLastCreated();
     gf_Colorbuttonsredblue(DialogControlLastCreated(), gv_iPlayer);
     libNtve_gf_CreateDialogItemLabel(DialogLastCreated(), 160, 40, c_anchorTopLeft, 215, 39, StringExternal("Param/Value/1384EA37"), ColorWithAlpha(0,0,0,0), false, 2.0);
     lv_x += 160;
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 160, 40, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/C3EFF330"), StringExternal("Param/Value/9BF2CBC9"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 160, 40, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/C3EFF330"), StringToText(""), "");
     gv_buttonRace[3][gv_iPlayer] = DialogControlLastCreated();
     gf_Colorbuttonsredblue(DialogControlLastCreated(), gv_iPlayer);
     libNtve_gf_CreateDialogItemLabel(DialogLastCreated(), 160, 40, c_anchorTopLeft, 390, 39, StringExternal("Param/Value/AAC34D22"), ColorWithAlpha(0,0,0,0), false, 2.0);
@@ -1939,14 +1941,14 @@ void gf_Createbuttonsforsubmenusave () {
     lv_y = gv_xYOffset;
 
     // Implementation
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/112A62C7"), StringExternal("Param/Value/74EACF6F"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringToText(""), StringExternal("Param/Value/74EACF6F"), "");
     gv_buttonSave[0] = DialogControlLastCreated();
     lv_x += gv_buttonLabelWidth;
     auto255395CD_ae = 9;
     auto255395CD_ai = 1;
     gv_iSlot = 1;
     for ( ; ( (auto255395CD_ai >= 0 && gv_iSlot <= auto255395CD_ae) || (auto255395CD_ai <= 0 && gv_iSlot >= auto255395CD_ae) ) ; gv_iSlot += auto255395CD_ai ) {
-        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/F4EFE02B"), (StringExternal("Param/Value/1CDAAAA5") + IntToText(gv_iSlot)), "");
+        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringToText(""), (StringExternal("Param/Value/1CDAAAA5") + IntToText(gv_iSlot)), "");
         gv_buttonSave[gv_iSlot] = DialogControlLastCreated();
         lv_x += gv_buttonLabelWidth;
     }
@@ -1965,7 +1967,7 @@ void gf_Createbuttonsforsubmenuload () {
     lv_y = gv_xYOffset;
 
     // Implementation
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/1614E274"), StringExternal("Param/Value/A4466F20"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringToText(""), StringExternal("Param/Value/A4466F20"), "");
     gv_buttonLoad[0] = DialogControlLastCreated();
     lv_x += gv_buttonLabelWidth;
     DialogControlSetEnabled(DialogControlLastCreated(), PlayerGroupActive(), false);
@@ -1973,7 +1975,7 @@ void gf_Createbuttonsforsubmenuload () {
     autoCD6E156F_ai = 1;
     gv_iSlot = 1;
     for ( ; ( (autoCD6E156F_ai >= 0 && gv_iSlot <= autoCD6E156F_ae) || (autoCD6E156F_ai <= 0 && gv_iSlot >= autoCD6E156F_ae) ) ; gv_iSlot += autoCD6E156F_ai ) {
-        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/3F827266"), (StringExternal("Param/Value/32B4F107") + IntToText(gv_iSlot)), "");
+        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringToText(""), (StringExternal("Param/Value/32B4F107") + IntToText(gv_iSlot)), "");
         gv_buttonLoad[gv_iSlot] = DialogControlLastCreated();
         lv_x += gv_buttonLabelWidth;
         DialogControlSetEnabled(DialogControlLastCreated(), PlayerGroupActive(), false);
@@ -1993,13 +1995,13 @@ void gf_Createbuttonsforsubmenuoptions () {
     gv_buttonY += 40;
     libNtve_gf_CreateDialogItemLabel(DialogLastCreated(), 500, 25, c_anchorTopLeft, gv_xYOffset, gv_buttonY, StringExternal("Param/Value/A469F5AE"), Color(100,100,100), false, 2.0);
     gv_buttonY += 20;
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, gv_buttonLabelHeight, c_anchorTopLeft, 62, gv_buttonY, StringExternal("Param/Value/9B6B4215"), StringExternal("Param/Value/21F9F71F"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, gv_buttonLabelHeight, c_anchorTopLeft, 62, gv_buttonY, StringToText(""), StringExternal("Param/Value/21F9F71F"), "");
     gv_buttonOptionUpgrade[0] = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, gv_buttonLabelHeight, c_anchorTopLeft, 187, gv_buttonY, StringExternal("Param/Value/BCB802C9"), StringExternal("Param/Value/7255E0BA"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, gv_buttonLabelHeight, c_anchorTopLeft, 187, gv_buttonY, StringToText(""), StringExternal("Param/Value/7255E0BA"), "");
     gv_buttonOptionUpgrade[1] = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, gv_buttonLabelHeight, c_anchorTopLeft, 312, gv_buttonY, StringExternal("Param/Value/31928E2C"), StringExternal("Param/Value/4818470D"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, gv_buttonLabelHeight, c_anchorTopLeft, 312, gv_buttonY, StringToText(""), StringExternal("Param/Value/4818470D"), "");
     gv_buttonOptionUpgrade[2] = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, gv_buttonLabelHeight, c_anchorTopLeft, 437, gv_buttonY, StringExternal("Param/Value/82615C97"), StringExternal("Param/Value/2CE8DF58"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 100, gv_buttonLabelHeight, c_anchorTopLeft, 437, gv_buttonY, StringToText(""), StringExternal("Param/Value/2CE8DF58"), "");
     gv_buttonOptionUpgrade[3] = DialogControlLastCreated();
     gv_buttonY += 60;
     libNtve_gf_CreateDialogItemLabel(DialogLastCreated(), 500, 25, c_anchorTopLeft, gv_xYOffset, gv_buttonY, StringExternal("Param/Value/647905EF"), Color(100,100,100), false, 2.0);
@@ -2031,8 +2033,8 @@ void gf_Createbuttonsforsubmenuoptions () {
     gv_buttonOptionPanel[1] = DialogControlLastCreated();
     gf_Createbuttonoff();
     gv_buttonOptionPanel[0] = DialogControlLastCreated();
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorBottom, 0, gv_xYOffset, StringExternal("Param/Value/5E7B9FE6"), StringExternal("Param/Value/56B23B34"), "");
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorBottom, 0, gv_xYOffset, StringExternal("Param/Value/D38C166B"), StringExternal("Param/Value/7138C550"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorBottom, 0, gv_xYOffset, StringToText(""), StringExternal("Param/Value/56B23B34"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorBottom, 0, gv_xYOffset, StringToText(""), StringExternal("Param/Value/7138C550"), "");
     gv_buttonClose = DialogControlLastCreated();
 }
 
@@ -2058,11 +2060,11 @@ void gf_Createbuttonsforsubmenualliances () {
     for ( ; ( (autoD226F20B_ai >= 0 && lv_iplayer <= autoD226F20B_ae) || (autoD226F20B_ai <= 0 && lv_iplayer >= autoD226F20B_ae) ) ; lv_iplayer += autoD226F20B_ai ) {
         lv_y += 60;
         libNtve_gf_CreateDialogItemLabel(DialogLastCreated(), 200, 50, c_anchorTopLeft, 50, lv_y, PlayerName(lv_iplayer), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lv_iplayer, false)), false, 2.0);
-        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 50, 50, c_anchorTopLeft, 300, lv_y, (StringExternal("Param/Value/A26EAEE7") + IntToText(lv_iplayer)), StringExternal("Param/Value/40EA551D"), "");
+        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 50, 50, c_anchorTopLeft, 300, lv_y, (StringExternal("Param/Value/A26EAEE7") + IntToText(lv_iplayer)), StringToText(""), "");
         gv_checkbox[lv_iplayer] = DialogControlLastCreated();
-        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 50, 50, c_anchorTopLeft, 400, lv_y, (StringExternal("Param/Value/8AE84D89") + IntToText(lv_iplayer)), StringExternal("Param/Value/B2165835"), "");
+        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 50, 50, c_anchorTopLeft, 400, lv_y, (StringExternal("Param/Value/8AE84D89") + IntToText(lv_iplayer)), StringToText(""), "");
         gv_checkboxRed[lv_iplayer] = DialogControlLastCreated();
-        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 50, 50, c_anchorTopLeft, 500, lv_y, (StringExternal("Param/Value/72AB09DA") + IntToText(lv_iplayer)), StringExternal("Param/Value/C82B814E"), "");
+        libNtve_gf_CreateDialogItemButton(DialogLastCreated(), 50, 50, c_anchorTopLeft, 500, lv_y, (StringExternal("Param/Value/72AB09DA") + IntToText(lv_iplayer)), StringToText(""), "");
         gv_checkboxBlue[lv_iplayer] = DialogControlLastCreated();
     }
 }
@@ -2085,10 +2087,10 @@ void gf_Createbuttonsforsubmenufilename () {
     DialogControlSetSize(DialogControlLastCreated(), PlayerGroupActive(), 480, gv_buttonHeight);
     lv_y += gv_buttonHeight;
     lv_x += gv_buttonLabelWidth;
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/9E8FEE6B"), StringExternal("Param/Value/5FFC9FF2"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringToText(""), StringExternal("Param/Value/5FFC9FF2"), "");
     gv_buttonOK = DialogControlLastCreated();
     lv_x += gv_buttonLabelWidth;
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringExternal("Param/Value/E076CA65"), StringExternal("Param/Value/1170F064"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, lv_x, lv_y, StringToText(""), StringExternal("Param/Value/1170F064"), "");
     gv_buttonCancel = DialogControlLastCreated();
 }
 
@@ -2126,12 +2128,12 @@ bool auto_gf_Colorbuttonsredblue_TriggerFunc (bool testConds, bool runActions) {
 
 void gf_Createbuttonoff () {
     // Implementation
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, 460, gv_buttonY, StringExternal("Param/Value/2BAA0496"), StringExternal("Param/Value/57511214"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, 460, gv_buttonY, StringToText(""), StringExternal("Param/Value/57511214"), "");
 }
 
 void gf_Createbuttonon () {
     // Implementation
-    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, 340, gv_buttonY, StringExternal("Param/Value/CDD1F912"), StringExternal("Param/Value/66B0AE31"), "");
+    libNtve_gf_CreateDialogItemButton(DialogLastCreated(), gv_buttonLabelWidth, gv_buttonLabelHeight, c_anchorTopLeft, 340, gv_buttonY, StringToText(""), StringExternal("Param/Value/66B0AE31"), "");
 }
 
 void gf_Createobserverpanel () {
@@ -2664,8 +2666,8 @@ void gf_ButtonSave (int lp_inputslot) {
         gf_HighlightButton(gv_buttonLoad[lp_inputslot], false);
         Wait(0.1, c_timeGame);
         DialogControlSetEnabled(gv_buttonLoad[lp_inputslot], PlayerGroupActive(), false);
-        libNtve_gf_SetDialogItemTooltip(gv_buttonSave[lp_inputslot], StringExternal("Param/Value/C5BD48C9"), PlayerGroupActive());
-        libNtve_gf_SetDialogItemTooltip(gv_buttonLoad[lp_inputslot], StringExternal("Param/Value/85669BB5"), PlayerGroupActive());
+        libNtve_gf_SetDialogItemTooltip(gv_buttonSave[lp_inputslot], StringToText(""), PlayerGroupActive());
+        libNtve_gf_SetDialogItemTooltip(gv_buttonLoad[lp_inputslot], StringToText(""), PlayerGroupActive());
         gf_ClearState(lp_inputslot);
         gf_HideSubmenus();
         Wait(1.0, c_timeGame);
@@ -2677,8 +2679,8 @@ void gf_ButtonSave (int lp_inputslot) {
         gf_HighlightButton(gv_buttonLoad[lp_inputslot], true);
         Wait(0.1, c_timeGame);
         DialogControlSetEnabled(gv_buttonLoad[lp_inputslot], PlayerGroupActive(), true);
-        libNtve_gf_SetDialogItemTooltip(gv_buttonSave[lp_inputslot], StringExternal("Param/Value/9858CD34"), PlayerGroupActive());
-        libNtve_gf_SetDialogItemTooltip(gv_buttonLoad[lp_inputslot], StringExternal("Param/Value/4AB14F67"), PlayerGroupActive());
+        libNtve_gf_SetDialogItemTooltip(gv_buttonSave[lp_inputslot], StringToText(""), PlayerGroupActive());
+        libNtve_gf_SetDialogItemTooltip(gv_buttonLoad[lp_inputslot], StringToText(""), PlayerGroupActive());
         gf_SaveState(lp_inputslot);
         gf_SavetoBank(lp_inputslot);
         gf_HideSubmenus();
@@ -3479,7 +3481,7 @@ bool gt_InitializeMap_Func (bool testConds, bool runActions) {
     UnitGroupLoopEnd();
     UnitMagazineArm(UnitFromId(68), AbilityCommand("ArmSiloWithNuke", 0), 10);
     UnitMagazineArm(UnitFromId(67), AbilityCommand("ArmSiloWithNuke", 0), 10);
-    libNtve_gf_SetAlliance(9, 10, 7);
+    libNtve_gf_SetAlliance(9, 10, libNtve_ge_AllianceSetting_Neutral);
     PlayerGroupLoopBegin(PlayerGroupAll());
     for ( ; !PlayerGroupLoopDone() ; PlayerGroupLoopStep() ) {
         PlayerModifyPropertyInt(PlayerGroupLoopCurrent(), c_playerPropMinerals, c_playerPropOperSetTo, 99999);
@@ -3517,16 +3519,16 @@ bool gt_InitializeMap_Func (bool testConds, bool runActions) {
         UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, StringExternal("Param/Value/FF76445C"));
         UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (TextWithColor(PlayerName(1), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(1, false))) + StringExternal("Param/Value/1EE68A8E")));
     }
-    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/A0E968B7"), 0), StringExternal("Param/Value/AB592F06"), StringExternal("Param/Value/608B77BA"), "Assets\\Textures\\btn-tips-computerterminals.dds");
-    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/71304DB0"), 0), StringExternal("Param/Value/8505CDAE"), StringExternal("Param/Value/F44778EB"), "Assets\\Textures\\btn-tips-laserdrillantiair.dds");
-    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/FB563591"), 0), StringExternal("Param/Value/2EE0B551"), StringExternal("Param/Value/7609EB00"), "Assets\\Textures\\btn-tips-hacking.dds");
-    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/163ED7F0"), 0), StringExternal("Param/Value/BB1A9EDE"), StringExternal("Param/Value/340D9F15"), "Assets\\Textures\\btn-tips-missioncase.dds");
-    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/DC8D7B25"), 0), StringExternal("Param/Value/E36ADE65"), StringExternal("Param/Value/8BB03241"), "Assets\\Textures\\btn-tips-starmap.dds");
-    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/360D5A78"), 0), StringExternal("Param/Value/AFED49D2"), StringExternal("Param/Value/5F7EF792"), "Assets\\Textures\\btn-building-terran-bunker.dds");
-    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/84753A09"), 0), StringExternal("Param/Value/835495DE"), StringExternal("Param/Value/E2C6AD8A"), "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel2.dds");
-    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/6A22DC1A"), 0), StringExternal("Param/Value/BC265421"), StringExternal("Param/Value/BB04D88D"), "Assets\\Textures\\btn-unit-terran-marine.dds");
+    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/A0E968B7"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/AB592F06"), StringExternal("Param/Value/608B77BA"), "Assets\\Textures\\btn-tips-computerterminals.dds");
+    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/71304DB0"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/8505CDAE"), StringExternal("Param/Value/F44778EB"), "Assets\\Textures\\btn-tips-laserdrillantiair.dds");
+    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/FB563591"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/2EE0B551"), StringExternal("Param/Value/7609EB00"), "Assets\\Textures\\btn-tips-hacking.dds");
+    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/163ED7F0"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/BB1A9EDE"), StringExternal("Param/Value/340D9F15"), "Assets\\Textures\\btn-tips-missioncase.dds");
+    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/DC8D7B25"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/E36ADE65"), StringExternal("Param/Value/8BB03241"), "Assets\\Textures\\btn-tips-starmap.dds");
+    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/360D5A78"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/AFED49D2"), StringExternal("Param/Value/5F7EF792"), "Assets\\Textures\\btn-building-terran-bunker.dds");
+    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/84753A09"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/835495DE"), StringExternal("Param/Value/E2C6AD8A"), "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel2.dds");
+    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/6A22DC1A"), libNtve_ge_TipType_NormalTip), StringExternal("Param/Value/BC265421"), StringExternal("Param/Value/BB04D88D"), "Assets\\Textures\\btn-unit-terran-marine.dds");
     TipAlertPanelClear(PlayerGroupActive());
-    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/54C226D2"), 0), StringExternal("Param/Value/FE21CB81"), StringExternal("Param/Value/022F233B"), "Assets\\Textures\\btn-tips-tutorial.dds");
+    HelpPanelAddTip(PlayerGroupActive(), libNtve_gf_FormatTipTitle(StringExternal("Param/Value/54C226D2"), libNtve_ge_TipType_NormalTip), StringToText(""), StringExternal("Param/Value/022F233B"), "Assets\\Textures\\btn-tips-tutorial.dds");
     TimerStart(gv_timer, c_timerDurationInfinite, false, c_timeReal);
     UIDisplayMessage(PlayerGroupAll(), c_messageAreaWarning, StringExternal("Param/Value/0AE31C3A"));
     return true;
@@ -3586,7 +3588,7 @@ bool gt_Back_Func (bool testConds, bool runActions) {
     gf_HideAllDialogs();
     gf_ShowAllDialogs();
     gf_ResetUnits();
-    libNtve_gf_SetAlliance(9, 10, 7);
+    libNtve_gf_SetAlliance(9, 10, libNtve_ge_AllianceSetting_Neutral);
     PlayerGroupLoopBegin(PlayerGroupActive());
     for ( ; !PlayerGroupLoopDone() ; PlayerGroupLoopStep() ) {
         UnitGroupSelect(UnitGroup(null, c_playerAny, RegionEntireMap(), UnitFilter(0, 0, 0, 0), 0), PlayerGroupLoopCurrent(), false);
@@ -3638,7 +3640,7 @@ bool gt_Start_Func (bool testConds, bool runActions) {
     gf_HideAllDialogs();
     BoardMinimizeSetState(gv_leaderboard, PlayerGroupActive(), true);
     DialogSetVisible(gv_dialogAttack, PlayerGroupActive(), true);
-    libNtve_gf_SetAlliance(9, 10, 5);
+    libNtve_gf_SetAlliance(9, 10, libNtve_ge_AllianceSetting_Enemy);
     PlayerGroupLoopBegin(PlayerGroupActive());
     for ( ; !PlayerGroupLoopDone() ; PlayerGroupLoopStep() ) {
         UnitGroupSelect(UnitGroup(null, c_playerAny, RegionEntireMap(), UnitFilter(0, 0, 0, 0), 0), PlayerGroupLoopCurrent(), false);
@@ -3830,7 +3832,7 @@ bool gt_Update_Func (bool testConds, bool runActions) {
     }
     UnitGroupLoopEnd();
     lv_supplycount = PlayerGetPropertyInt(lv_winningplayer, c_playerPropSuppliesUsed);
-    UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (lv_winningtext + StringExternal("Param/Value/9AFFD9A5") + IntToText(lv_unitcount[0]) + StringExternal("Param/Value/40A51339") + IntToText(lv_mineralscount) + StringExternal("Param/Value/FDAEF2C5") + IntToText(lv_vespenecount) + StringExternal("Param/Value/044F853C") + IntToText(lv_supplycount) + StringExternal("Param/Value/D97699DE")));
+    UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (lv_winningtext + StringExternal("Param/Value/9AFFD9A5") + IntToText(lv_unitcount[0]) + StringExternal("Param/Value/40A51339") + IntToText(lv_mineralscount) + StringExternal("Param/Value/FDAEF2C5") + IntToText(lv_vespenecount) + StringExternal("Param/Value/044F853C") + IntToText(lv_supplycount) + StringToText("")));
     return true;
 }
 
@@ -4204,7 +4206,7 @@ bool gt_UnitDies_Func (bool testConds, bool runActions) {
     BoardItemSetText(gv_leaderboard, lv_column, 3, IntToText(PlayerGetPropertyInt(gv_computer, c_playerPropSuppliesUsed)));
     lv_unitcount = UnitGroupCount(UnitGroup(lv_unittype, gv_computer, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0), c_unitCountAlive);
     if ((lv_unitcount == 0)) {
-        BoardItemSetText(gv_leaderboard, lv_column, lv_row, StringExternal("Param/Value/237C08AC"));
+        BoardItemSetText(gv_leaderboard, lv_column, lv_row, StringToText(""));
         BoardItemSetIcon(gv_leaderboard, lv_column, lv_row, null, true);
         gv_iconFlag[lv_column][lv_row] = false;
     }

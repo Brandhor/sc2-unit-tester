@@ -10,10 +10,10 @@ ComponentList.SC2Components
 DocumentHeader
 DocumentInfo
 DocumentInfo.version
-enGB.SC2Data\LocalizedData\GameHotkeys.txt
-enGB.SC2Data\LocalizedData\GameStrings.txt
-enGB.SC2Data\LocalizedData\ObjectStrings.txt
-enGB.SC2Data\LocalizedData\TriggerStrings.txt
+enUS.SC2Data\LocalizedData\GameHotkeys.txt
+enUS.SC2Data\LocalizedData\GameStrings.txt
+enUS.SC2Data\LocalizedData\ObjectStrings.txt
+enUS.SC2Data\LocalizedData\TriggerStrings.txt
 GameData.version
 GameText.version
 lotv.jpg
