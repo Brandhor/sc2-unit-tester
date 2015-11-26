@@ -474,6 +474,46 @@ bool auto_gf_Energy_TriggerFunc (bool testConds, bool runActions) {
         libNtve_gf_UnitAbilityRemoveCooldown(UnitGroupLoopCurrent(), "Blink", "Blink");
     }
     UnitGroupLoopEnd();
+    UnitGroupLoopBegin(UnitGroup("VoidRay", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0));
+    for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
+        libNtve_gf_UnitAbilityRemoveCooldown(UnitGroupLoopCurrent(), "VoidRaySwarmDamageBoost", "Abil/VoidRaySwarmDamageBoost");
+    }
+    UnitGroupLoopEnd();
+    UnitGroupLoopBegin(UnitGroup("Zealot", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0));
+    for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
+        UnitClearCooldowns(UnitGroupLoopCurrent(), true);
+    }
+    UnitGroupLoopEnd();
+    UnitGroupLoopBegin(UnitGroup("SwarmHostBurrowedMP", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0));
+    for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
+        libNtve_gf_UnitAbilityRemoveCooldown(UnitGroupLoopCurrent(), "SpawnLocustsTargeted", "Abil/SpawnLocustsTargeted");
+    }
+    UnitGroupLoopEnd();
+    UnitGroupLoopBegin(UnitGroup("SwarmHostMP", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0));
+    for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
+        libNtve_gf_UnitAbilityRemoveCooldown(UnitGroupLoopCurrent(), "SpawnLocustsTargeted", "Abil/SpawnLocustsTargeted");
+    }
+    UnitGroupLoopEnd();
+    UnitGroupLoopBegin(UnitGroup("Medivac", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0));
+    for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
+        libNtve_gf_UnitAbilityRemoveCooldown(UnitGroupLoopCurrent(), "MedivacSpeedBoost", "Abil/MedivacSpeedBoost");
+    }
+    UnitGroupLoopEnd();
+    UnitGroupLoopBegin(UnitGroup("Oracle", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0));
+    for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
+        UnitClearCooldowns(UnitGroupLoopCurrent(), true);
+    }
+    UnitGroupLoopEnd();
+    UnitGroupLoopBegin(UnitGroup("HighTemplar", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0));
+    for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
+        libNtve_gf_UnitAbilityRemoveCooldown(UnitGroupLoopCurrent(), "PsiStorm", "Abil/PsiStorm");
+    }
+    UnitGroupLoopEnd();
+    UnitGroupLoopBegin(UnitGroup("Disruptor", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0));
+    for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
+        libNtve_gf_UnitAbilityRemoveCooldown(UnitGroupLoopCurrent(), "PurificationNovaTargetted", "Abil/PurificationNovaTargetted");
+    }
+    UnitGroupLoopEnd();
     UnitGroupLoopBegin(UnitGroup("Carrier", c_playerAny, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0));
     for ( ; !UnitGroupLoopDone() ; UnitGroupLoopStep() ) {
         lv_interceptorcount = UnitMagazineCount(UnitGroupLoopCurrent(), "CarrierHangar");
@@ -1297,7 +1337,7 @@ void gf_DatabaseResearch () {
     gf_GetResearchDataManual("TerranBuildingArmor", "Assets\\Textures\\btn-upgrade-terran-buildingarmor.dds", "UpgradeBuildingArmorLevel1", 0, "EngineeringBayResearch", "1");
     gf_GetResearchDataManual("HighCapacityBarrels", "Assets\\Textures\\btn-upgrade-terran-infernalpreigniter.dds", "ResearchHighCapacityBarrels", 0, "FactoryTechLabResearch", "1");
     gf_GetResearchDataManual("DrillClaws", "Assets\\Textures\\btn-upgrade-terran-researchdrillingclaws.dds", "ResearchDrillClaws", 0, "FactoryTechLabResearch", "4");
-    gf_GetResearchDataManual("CycloneAirUpgrade", "Assets\\Textures\\btn-upgrade-terran-magfieldaccelerator.dds", "CycloneResearchLockOnDamageUpgrade", 0, "FactoryTechLabResearch", "7");
+    gf_GetResearchDataManual("CycloneLockOnDamageUpgrade", "Assets\\Textures\\btn-upgrade-terran-magfieldaccelerator.dds", "CycloneResearchLockOnDamageUpgrade", 0, "FactoryTechLabResearch", "7");
     gf_GetResearchDataManual("MedivacIncreaseSpeedBoost", "Assets\\Textures\\btn-upgrade-terran-jotunboosters.dds", "ResearchHighCapacityFuelTanks", 0, "StarportTechLabResearch", "2");
     gf_GetResearchDataManual("RavenDamageUpgrade", "Assets\\Textures\\btn-techupgrade-terran-ripwavemissiles.dds", "ResearchExplosiveShrapnelShells", 0, "StarportTechLabResearch", "7");
     gf_GetResearchDataManual("RavenCorvidReactor", "Assets\\Textures\\btn-upgrade-terran-corvidreactor.dds", "ResearchRavenEnergyUpgrade", 0, "StarportTechLabResearch", "3");
@@ -2568,36 +2608,28 @@ void gf_AlliancesAction () {
         }
         else if ((EventDialogControl() == gv_checkboxRed[lv_i]) && (gv_controlRed[lv_i] == false)) {
             gv_controlRed[lv_i] = true;
-            PlayerSetAlliance(9, c_allianceIdControl, lv_i, true);
-            PlayerSetAlliance(9, c_allianceIdVision, lv_i, true);
-            PlayerSetAlliance(9, c_allianceIdSpend, lv_i, true);
+            libNtve_gf_SetAlliance(9, lv_i, libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending);
             DialogControlFadeTransparency(gv_checkboxRed[lv_i], PlayerGroupActive(), 0.5, 0.0);
             UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (StringExternal("Param/Value/CC82683D") + IntToText(lv_i) + StringExternal("Param/Value/DE24BFC4") + TextWithColor(PlayerName(lv_i), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lv_i, false))) + StringExternal("Param/Value/FB03D281")));
             return ;
         }
         else if ((EventDialogControl() == gv_checkboxRed[lv_i]) && (gv_controlRed[lv_i] == true)) {
             gv_controlRed[lv_i] = false;
-            PlayerSetAlliance(9, c_allianceIdControl, lv_i, false);
-            PlayerSetAlliance(9, c_allianceIdVision, lv_i, false);
-            PlayerSetAlliance(9, c_allianceIdSpend, lv_i, false);
+            libNtve_gf_SetAlliance(9, lv_i, libNtve_ge_AllianceSetting_Ally);
             DialogControlFadeTransparency(gv_checkboxRed[lv_i], PlayerGroupActive(), 0.5, 75.0);
             UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (StringExternal("Param/Value/CC011ED6") + IntToText(lv_i) + StringExternal("Param/Value/B349B20D") + TextWithColor(PlayerName(lv_i), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lv_i, false))) + StringExternal("Param/Value/D9C75727")));
             return ;
         }
         else if ((EventDialogControl() == gv_checkboxBlue[lv_i]) && (gv_controlBlue[lv_i] == false)) {
             gv_controlBlue[lv_i] = true;
-            PlayerSetAlliance(10, c_allianceIdControl, lv_i, true);
-            PlayerSetAlliance(10, c_allianceIdVision, lv_i, true);
-            PlayerSetAlliance(10, c_allianceIdSpend, lv_i, true);
+            libNtve_gf_SetAlliance(10, lv_i, libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending);
             DialogControlFadeTransparency(gv_checkboxBlue[lv_i], PlayerGroupActive(), 0.5, 0.0);
             UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (StringExternal("Param/Value/12767EEB") + IntToText(lv_i) + StringExternal("Param/Value/DDEF4D90") + TextWithColor(PlayerName(lv_i), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lv_i, false))) + StringExternal("Param/Value/C447B465")));
             return ;
         }
         else if ((EventDialogControl() == gv_checkboxBlue[lv_i]) && (gv_controlBlue[lv_i] == true)) {
             gv_controlBlue[lv_i] = false;
-            PlayerSetAlliance(10, c_allianceIdControl, lv_i, false);
-            PlayerSetAlliance(10, c_allianceIdVision, lv_i, false);
-            PlayerSetAlliance(10, c_allianceIdSpend, lv_i, false);
+            libNtve_gf_SetAlliance(10, lv_i, libNtve_ge_AllianceSetting_Ally);
             DialogControlFadeTransparency(gv_checkboxBlue[lv_i], PlayerGroupActive(), 0.5, 75.0);
             UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (StringExternal("Param/Value/C37454DE") + IntToText(lv_i) + StringExternal("Param/Value/08CB16AC") + TextWithColor(PlayerName(lv_i), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(lv_i, false))) + StringExternal("Param/Value/BC460BDF")));
             return ;
@@ -3494,13 +3526,9 @@ bool gt_InitializeMap_Func (bool testConds, bool runActions) {
         PlayerModifyPropertyInt(1, c_playerPropCredits, c_playerPropOperSetTo, 1);
         PlayerModifyPropertyInt(2, c_playerPropCredits, c_playerPropOperSetTo, 1);
         gv_controlRed[1] = true;
-        PlayerSetAlliance(9, c_allianceIdVision, 1, true);
-        PlayerSetAlliance(9, c_allianceIdControl, 1, true);
-        PlayerSetAlliance(9, c_allianceIdSpend, 1, true);
+        libNtve_gf_SetAlliance(9, 1, libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending);
         gv_controlBlue[2] = true;
-        PlayerSetAlliance(10, c_allianceIdVision, 2, true);
-        PlayerSetAlliance(10, c_allianceIdControl, 2, true);
-        PlayerSetAlliance(10, c_allianceIdSpend, 2, true);
+        libNtve_gf_SetAlliance(10, 2, libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending);
         UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, StringExternal("Param/Value/1E69A04A"));
         UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (TextWithColor(PlayerName(1), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(1, false))) + StringExternal("Param/Value/63364F79")));
         UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (TextWithColor(PlayerName(2), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(2, false))) + StringExternal("Param/Value/A21F26AB")));
@@ -3510,12 +3538,8 @@ bool gt_InitializeMap_Func (bool testConds, bool runActions) {
         gv_controlRed[1] = true;
         gv_controlBlue[1] = true;
         PlayerModifyPropertyInt(1, c_playerPropCredits, c_playerPropOperSetTo, 1);
-        PlayerSetAlliance(9, c_allianceIdVision, 1, true);
-        PlayerSetAlliance(9, c_allianceIdControl, 1, true);
-        PlayerSetAlliance(9, c_allianceIdSpend, 1, true);
-        PlayerSetAlliance(10, c_allianceIdVision, 1, true);
-        PlayerSetAlliance(10, c_allianceIdControl, 1, true);
-        PlayerSetAlliance(10, c_allianceIdSpend, 1, true);
+        libNtve_gf_SetAlliance(9, 1, libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending);
+        libNtve_gf_SetAlliance(10, 1, libNtve_ge_AllianceSetting_AllyWithSharedVisionControlAndSpending);
         UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, StringExternal("Param/Value/FF76445C"));
         UIDisplayMessage(PlayerGroupActive(), c_messageAreaSubtitle, (TextWithColor(PlayerName(1), libNtve_gf_ConvertPlayerColorToColor(PlayerGetColorIndex(1, false))) + StringExternal("Param/Value/1EE68A8E")));
     }
