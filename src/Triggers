@@ -15223,11 +15223,11 @@
     <Element Type="FunctionCall" Id="5C213E9B">
         <FunctionDef Type="FunctionDef" Id="28AC02A4"/>
         <Parameter Type="Param" Id="1BDADAC7"/>
-        <Parameter Type="Param" Id="EAC08DE1"/>
         <Parameter Type="Param" Id="1D4BDF74"/>
         <Parameter Type="Param" Id="AE6BE0CA"/>
         <Parameter Type="Param" Id="50B96733"/>
         <Parameter Type="Param" Id="A00C5FB6"/>
+        <Parameter Type="Param" Id="DE9FECE7"/>
     </Element>
     <Element Type="Param" Id="1BDADAC7">
         <ParameterDef Type="ParamDef" Id="B2BC0A10"/>
@@ -15235,15 +15235,9 @@
         <ValueType Type="gamelink"/>
         <ValueGameType Type="Upgrade"/>
     </Element>
-    <Element Type="Param" Id="EAC08DE1">
-        <ParameterDef Type="ParamDef" Id="044E2D9C"/>
-        <Value>Assets\Textures\btn-upgrade-protoss-airweaponslevel1.dds</Value>
-        <ValueType Type="filepath"/>
-        <ValueTypeInfo Value="3"/>
-    </Element>
     <Element Type="Param" Id="1D4BDF74">
         <ParameterDef Type="ParamDef" Id="53C25E0E"/>
-        <Value>ProtossAirArmorLevel1</Value>
+        <Value>ProtossAirWeaponsLevel1</Value>
         <ValueType Type="string"/>
     </Element>
     <Element Type="Param" Id="AE6BE0CA">
@@ -15261,14 +15255,20 @@
         <Value>0</Value>
         <ValueType Type="string"/>
     </Element>
+    <Element Type="Param" Id="DE9FECE7">
+        <ParameterDef Type="ParamDef" Id="044E2D9C"/>
+        <Value>Assets\Textures\btn-upgrade-protoss-airweaponslevel0.dds</Value>
+        <ValueType Type="filepath"/>
+        <ValueTypeInfo Value="5"/>
+    </Element>
     <Element Type="FunctionCall" Id="E7ED5E96">
         <FunctionDef Type="FunctionDef" Id="28AC02A4"/>
         <Parameter Type="Param" Id="6FD1DE2F"/>
-        <Parameter Type="Param" Id="7523397A"/>
         <Parameter Type="Param" Id="354F2CD5"/>
         <Parameter Type="Param" Id="4D2F60B2"/>
         <Parameter Type="Param" Id="91206980"/>
         <Parameter Type="Param" Id="E7682336"/>
+        <Parameter Type="Param" Id="E1C44E1A"/>
     </Element>
     <Element Type="Param" Id="6FD1DE2F">
         <ParameterDef Type="ParamDef" Id="B2BC0A10"/>
@@ -15276,15 +15276,9 @@
         <ValueType Type="gamelink"/>
         <ValueGameType Type="Upgrade"/>
     </Element>
-    <Element Type="Param" Id="7523397A">
-        <ParameterDef Type="ParamDef" Id="044E2D9C"/>
-        <Value>Assets\Textures\btn-upgrade-protoss-airweaponslevel2.dds</Value>
-        <ValueType Type="filepath"/>
-        <ValueTypeInfo Value="3"/>
-    </Element>
     <Element Type="Param" Id="354F2CD5">
         <ParameterDef Type="ParamDef" Id="53C25E0E"/>
-        <Value>ProtossAirArmorLevel2</Value>
+        <Value>ProtossAirWeaponsLevel2</Value>
         <ValueType Type="string"/>
     </Element>
     <Element Type="Param" Id="4D2F60B2">
@@ -15302,14 +15296,20 @@
         <Value>1</Value>
         <ValueType Type="string"/>
     </Element>
+    <Element Type="Param" Id="E1C44E1A">
+        <ParameterDef Type="ParamDef" Id="044E2D9C"/>
+        <Value>Assets\Textures\btn-upgrade-protoss-airweaponslevel2.dds</Value>
+        <ValueType Type="filepath"/>
+        <ValueTypeInfo Value="5"/>
+    </Element>
     <Element Type="FunctionCall" Id="5295AECC">
         <FunctionDef Type="FunctionDef" Id="28AC02A4"/>
         <Parameter Type="Param" Id="C9A6E821"/>
-        <Parameter Type="Param" Id="BA8CBC0A"/>
         <Parameter Type="Param" Id="D65CD6E0"/>
         <Parameter Type="Param" Id="4B3993BE"/>
         <Parameter Type="Param" Id="673EEAA8"/>
         <Parameter Type="Param" Id="CC358A5E"/>
+        <Parameter Type="Param" Id="12F37F5A"/>
     </Element>
     <Element Type="Param" Id="C9A6E821">
         <ParameterDef Type="ParamDef" Id="B2BC0A10"/>
@@ -15317,15 +15317,9 @@
         <ValueType Type="gamelink"/>
         <ValueGameType Type="Upgrade"/>
     </Element>
-    <Element Type="Param" Id="BA8CBC0A">
-        <ParameterDef Type="ParamDef" Id="044E2D9C"/>
-        <Value>Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds</Value>
-        <ValueType Type="filepath"/>
-        <ValueTypeInfo Value="3"/>
-    </Element>
     <Element Type="Param" Id="D65CD6E0">
         <ParameterDef Type="ParamDef" Id="53C25E0E"/>
-        <Value>ProtossAirArmorLevel3</Value>
+        <Value>ProtossAirWeaponsLevel3</Value>
         <ValueType Type="string"/>
     </Element>
     <Element Type="Param" Id="4B3993BE">
@@ -15342,6 +15336,12 @@
         <ParameterDef Type="ParamDef" Id="B895E5E0"/>
         <Value>2</Value>
         <ValueType Type="string"/>
+    </Element>
+    <Element Type="Param" Id="12F37F5A">
+        <ParameterDef Type="ParamDef" Id="044E2D9C"/>
+        <Value>Assets\Textures\btn-upgrade-protoss-airweaponslevel3.dds</Value>
+        <ValueType Type="filepath"/>
+        <ValueTypeInfo Value="5"/>
     </Element>
     <Element Type="FunctionCall" Id="2B32448E">
         <FunctionDef Type="FunctionDef" Id="28AC02A4"/>

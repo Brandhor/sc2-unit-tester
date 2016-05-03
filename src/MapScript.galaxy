@@ -1293,9 +1293,9 @@ void gf_DatabaseResearch () {
     gf_GetResearchDataManual("ProtossGroundArmorsLevel1", "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel1.dds", "ProtossGroundArmorLevel1", 1, "ForgeResearch", "3");
     gf_GetResearchDataManual("ProtossGroundArmorsLevel2", "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel2.dds", "ProtossGroundArmorLevel2", 2, "ForgeResearch", "4");
     gf_GetResearchDataManual("ProtossGroundArmorsLevel3", "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel3.dds", "ProtossGroundArmorLevel3", 3, "ForgeResearch", "5");
-    gf_GetResearchDataManual("ProtossAirWeaponsLevel1", "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel1.dds", "ProtossAirArmorLevel1", 1, "CyberneticsCoreResearch", "0");
-    gf_GetResearchDataManual("ProtossAirWeaponsLevel2", "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel2.dds", "ProtossAirArmorLevel2", 2, "CyberneticsCoreResearch", "1");
-    gf_GetResearchDataManual("ProtossAirWeaponsLevel3", "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel3.dds", "ProtossAirArmorLevel3", 3, "CyberneticsCoreResearch", "2");
+    gf_GetResearchDataManual("ProtossAirWeaponsLevel1", "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel0.dds", "ProtossAirWeaponsLevel1", 1, "CyberneticsCoreResearch", "0");
+    gf_GetResearchDataManual("ProtossAirWeaponsLevel2", "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel2.dds", "ProtossAirWeaponsLevel2", 2, "CyberneticsCoreResearch", "1");
+    gf_GetResearchDataManual("ProtossAirWeaponsLevel3", "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel3.dds", "ProtossAirWeaponsLevel3", 3, "CyberneticsCoreResearch", "2");
     gf_GetResearchDataManual("ProtossAirArmorsLevel1", "Assets\\Textures\\btn-upgrade-protoss-airarmorlevel1.dds", "ProtossAirArmorLevel1", 1, "CyberneticsCoreResearch", "3");
     gf_GetResearchDataManual("ProtossAirArmorsLevel2", "Assets\\Textures\\btn-upgrade-protoss-airarmorlevel2.dds", "ProtossAirArmorLevel2", 2, "CyberneticsCoreResearch", "4");
     gf_GetResearchDataManual("ProtossAirArmorsLevel3", "Assets\\Textures\\btn-upgrade-protoss-airarmorlevel3.dds", "ProtossAirArmorLevel3", 3, "CyberneticsCoreResearch", "5");
