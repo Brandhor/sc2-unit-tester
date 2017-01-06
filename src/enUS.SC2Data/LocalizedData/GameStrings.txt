@@ -1,4 +1,4 @@
-Abil/Name/CustomBuild=Custom Build
+﻿Abil/Name/CustomBuild=Custom Build
 Button/Name/BuildDestructibleRock=Build Destructible Rock
 Button/Name/BuildMineralField=Build Mineral Field
 Button/Name/BuildNeutralSupplyDepot=Build Neutral Supply Depot

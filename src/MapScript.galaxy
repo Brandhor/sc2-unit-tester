@@ -568,7 +568,7 @@ void gf_RevealersOff () {
 
 bool gf_NoUnitsRed () {
     // Implementation
-    if ((UnitGroupCount(UnitGroup(null, 9, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0), c_unitCountAlive) == 0)) {
+    if ((UnitGroupCount(UnitGroup(null, 9, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0), c_unitCountAlive) == 0) && (UnitGroupCount(UnitGroup("Battlecruiser", 9, RegionEntireMap(), UnitFilter(0, (1 << (c_targetFilterStasis - 32)) | (1 << (c_targetFilterInvulnerable - 32)), (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) == 0)) {
         return true;
     }
     else {
@@ -578,7 +578,7 @@ bool gf_NoUnitsRed () {
 
 bool gf_NoUnitsBlue () {
     // Implementation
-    if ((UnitGroupCount(UnitGroup(null, 10, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0), c_unitCountAlive) == 0)) {
+    if ((UnitGroupCount(UnitGroup(null, 10, RegionEntireMap(), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32)) | (1 << (c_targetFilterInvulnerable - 32))), 0), c_unitCountAlive) == 0) && (UnitGroupCount(UnitGroup("Battlecruiser", 10, RegionEntireMap(), UnitFilter(0, (1 << (c_targetFilterStasis - 32)) | (1 << (c_targetFilterInvulnerable - 32)), (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) == 0)) {
         return true;
     }
     else {

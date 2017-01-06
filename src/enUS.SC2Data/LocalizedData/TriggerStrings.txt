@@ -1,4 +1,4 @@
-Category/Name/0125730F=Creator
+﻿Category/Name/0125730F=Creator
 Category/Name/0D48BEEB=Initialize Dialogs
 Category/Name/20FCA4BD=Control
 Category/Name/4B57A722=Attack
